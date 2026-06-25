@@ -1,10 +1,10 @@
-# Specification: [Your App Idea Name]
+# Specification: [rick's custom wood designs]
 
-App description: [Write a one or two sentences describing what your app does and who it’s for.]
+App description: [It is a online shop to sell wood projects my dad and I have made or people want made.]
 
 ## Style and Theme
 
-[Describe the look and feel of your app.] 
+[rustic but clean and organized i want the backround to be a forest or a workshop] 
 
 Overall mood:
 Examples: fun and playful, calm and professional, bold and energetic, etc.
@@ -15,7 +15,7 @@ Use the *style-guide.html* for details on styling -- fonts, colors, and layout.
 
 ### Story 1 (most important)
 
-[Write 1-2 sentences. Who is using the app, what do they want to do, and what do they see when it works? Write it like you are describing it to a friend.]
+[it is for people that want a wood project like a sign, shelf, cutting board, serving tray, etc.]
 
 ---
 

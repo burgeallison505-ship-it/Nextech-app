@@ -1,3 +1,46 @@
+:root {
+  --primary-color: #11500b;
+  --secondary-color: #5f2e12;
+  --button-color: #522a18;
+  --bg-rustic: #8a4c4c;
+}
+
+body {
+  background-color: var(--bg-rustic) !important;
+  color: #333;
+}
+
+.bg-light {
+  background-color: #f5e6d3 !important;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: #0d3c08 !important;
+  border-color: #0d3c08 !important;
+}
+
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+}
+
 .collection-card-image {
   height: 180px;
 }

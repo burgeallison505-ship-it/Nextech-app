@@ -2,8 +2,11 @@ export default {
   name: 'about-page-component',
   template: /* html */ `
     <section class="container py-4">
-      <h1>About</h1>
-      <p>This page is about the designer and builder of this app, including their background, portfolio of other work, and future career intentions.</p>
+      <h1>About Rick's Custom Wood Designs</h1>
+      <p>We're passionate about woodworking and creating handmade pieces that bring warmth and character to your home. Whether you're looking for kitchen essentials, decorative pieces, or personalized gifts, our work combines rustic charm with clean, modern design.</p>
+      
+      <h2 class="h5 mt-4">How We Work</h2>
+      <p>Browse our collection of ready-made items or reach out to discuss a custom project. We love taking on new ideas and working with customers to create exactly what they have in mind.</p>
     </section>
   `,
 };
