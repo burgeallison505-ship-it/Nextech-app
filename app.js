@@ -36,7 +36,7 @@ const app = Vue.createApp({
       error: '',
     });
 
-    fetch('items-template.csv')
+    fetch('items.csv')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Could not load CSV data file.');

@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: var(--bg-rustic) !important;
-  color: #333;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQebHHQSpgx4Fny5-iw-Gd5vIYxHl-uqqZN7hvn6Tvgew&s=10') center/cover fixed no-repeat;
+  color: #f4f1ec;
 }
 
 .bg-light {
-  background-color: #f5e6d3 !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
 }
 
 .navbar {
@@ -56,3 +56,184 @@ body {
 .item-detail-image {
   max-height: 320px;
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.153);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.video-placeholder {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f9f7f5;
+  border-radius: 8px;
+  border: 1px dashed #d4c5b0;
+}
+
+.project-section {
+  background-color: rgba(255, 255, 255, 0.153);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  touch-action: pan-y;
+  margin-bottom: 1rem;
+}
+
+.carousel-viewer {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.carousel-button {
+  background-color: rgba(47, 107, 61, 0.8);
+  border: none;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: background-color 0.2s;
+}
+
+.carousel-button:hover {
+  background-color: rgba(47, 107, 61, 1);
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d4c5b0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #2f6b3d;
+}
+
+.indicator:hover {
+  background-color: #b8a896;
+}
+
+.project-photo {
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #f0ebe2;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-section {
+  background-color: rgba(255, 255, 255, 0.153);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  background-color: rgba(255, 255, 255, 0.153);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.contact-item i {
+  color: #2b5f38fe;
+  font-size: 1.2rem;
+}
+
+.contact-item a {
+  color: #2b5f38fe;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-details {
+  background-color: #fbfbfb;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #ffffff;
+}
+
+.input-group .form-control-sm {
+  width: 50px;
+}
+.contact-item.mb-3 {
+  color: #2b5f38fe;
+}
+
+.btn-outline-primary {color:#ffffffff}
+
+#app > nav > div > button {color: #ffffff;}
+
+.contact-item {color: #2b5f38fe;}

@@ -8,9 +8,16 @@ export default {
       return itemsStore.items.find((item) => item.id === route.params.id);
     });
 
+    const handleImageError = (item) => {
+      if (item && item.imageUrl) {
+        item.imageUrl = '';
+      }
+    };
+
     return {
       itemsStore,
       selectedItem,
+      handleImageError,
     };
   },
   template: /* html */ `
@@ -34,6 +41,7 @@ export default {
           v-if="selectedItem.imageUrl"
           :src="selectedItem.imageUrl"
           :alt="selectedItem.name"
+          @error="handleImageError(selectedItem)"
           class="item-detail-image w-100 object-fit-cover" />
         <div
           v-else

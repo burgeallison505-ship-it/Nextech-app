@@ -3,8 +3,15 @@ export default {
   setup() {
     const itemsStore = Vue.inject('itemsStore');
 
+    const handleImageError = (item) => {
+      if (item && item.imageUrl) {
+        item.imageUrl = '';
+      }
+    };
+
     return {
       itemsStore,
+      handleImageError,
     };
   },
   template: /* html */ `
@@ -35,6 +42,7 @@ export default {
               v-if="item.imageUrl"
               :src="item.imageUrl"
               :alt="item.name"
+              @error="handleImageError(item)"
               class="card-img-top collection-card-image object-fit-cover" />
             <div
               v-else

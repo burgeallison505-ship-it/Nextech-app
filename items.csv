@@ -1,0 +1,11 @@
+id,name,description,image_url
+basic-board,basic cutting board ,a cutting board made out of walnut and maple ,assets/basic-board.png
+oak-shelf,oak floating shelf,a oak floating shelf to levitate your room,assets/oak-shelf.png
+custom-project, custom project,a project that you design or we help design,assets/custom-project.png
+charcuterie,charcuterie board,a circle charcuterie board that is personalized with your last name in the middle,assets/charcuterie.png
+butcher-block,butcher block,a end-grain butcher block cutting board ,assets/butcher-block.png
+circle-tray,circle serving tray,a circle serving tray to serve a small snack or to decorate your coffee table ,assets/circle-tray.png
+frame,picture frame,a wooden picture frame that is made on the CNC,assets/frame.png
+jewelry-box,jewelry box,a wooden jewelry box made on the CNC,assets/jewelry-box.png
+planter-box,planter box,a wooden planter box to grow your garden,assets/planter-box.png
+serving-tray,normal serving tray,a wooden rectangular serving tray to spruce up your living space ,assets/serving-tray.png
