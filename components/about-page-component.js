@@ -6,7 +6,7 @@ export default {
       <p>We're passionate about woodworking and creating handmade pieces that bring warmth and character to your home. Whether you're looking for kitchen essentials, decorative pieces, or personalized gifts, our work combines rustic charm with clean, modern design.</p>
 
       <h2 class="h5 mt-4">How We Work</h2>
-      <p>Browse our collection of ready-made items or reach out to discuss a custom project. We love taking on new ideas and working with customers to create exactly what they have in mind.</p>
+      <p>Browse our collection of items we have made or reach out to discuss a custom project. We love taking on new ideas and working with customers to create exactly what they have in mind.</p>
 
       <h2 class="h5 mt-5">Past Projects</h2>
       <div class="row g-3 mt-2">
