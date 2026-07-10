@@ -3,6 +3,7 @@ export default {
   template: /* html */ `
     <section class="container py-4">
       <h1>About Rick's Custom Wood Designs</h1>
+      // hello
       <p>We're passionate about woodworking and creating handmade pieces that bring warmth and character to your home. Whether you're looking for kitchen essentials, decorative pieces, or personalized gifts, our work combines rustic charm with clean, modern design.</p>
 
       <h2 class="h5 mt-4">How We Work</h2>
