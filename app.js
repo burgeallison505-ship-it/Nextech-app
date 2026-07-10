@@ -3,6 +3,7 @@ import AboutPageComponent from './components/about-page-component.js';
 import NavbarComponent from './components/navbar-component.js';
 import CollectionPageComponent from './components/collection-page-component.js';
 import ItemDetailPageComponent from './components/item-detail-page-component.js';
+import CartPageComponent from './components/cart-page-component.js';
 
 const routes = [
   {
@@ -21,6 +22,10 @@ const routes = [
     path: '/items/:id',
     component: ItemDetailPageComponent,
   },
+  {
+    path: '/cart',
+    component: CartPageComponent,
+  },
 ];
 
 const router = VueRouter.createRouter({
@@ -34,6 +39,27 @@ const app = Vue.createApp({
       items: [],
       isLoading: true,
       error: '',
+    });
+
+    const cartStore = Vue.reactive({
+      items: [],
+      addToCart: function(item) {
+        const hasInquiry = item.inquiryData && Object.keys(item.inquiryData).length > 0;
+        const existingItem = this.items.find(cartItem => {
+          if (cartItem.id !== item.id) return false;
+          if (!hasInquiry && !cartItem.inquiryData) return true;
+          if (hasInquiry && cartItem.inquiryData) {
+            return JSON.stringify(cartItem.inquiryData) === JSON.stringify(item.inquiryData);
+          }
+          return false;
+        });
+
+        if (existingItem) {
+          existingItem.quantity += item.quantity || 1;
+        } else {
+          this.items.push({ ...item, quantity: item.quantity || 1 });
+        }
+      },
     });
 
     fetch('items.csv')
@@ -78,6 +104,7 @@ const app = Vue.createApp({
       });
 
     Vue.provide('itemsStore', itemsStore);
+    Vue.provide('cartStore', cartStore);
 
     return {};
   },
