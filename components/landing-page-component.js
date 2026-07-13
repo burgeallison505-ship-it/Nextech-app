@@ -4,10 +4,13 @@ export default {
     const currentPhotoIndex = Vue.ref(0);
     const touchStartX = Vue.ref(0);
     const photos = [
-      { id: 1, title: 'Photo 1' },
-      { id: 2, title: 'Photo 2' },
-      { id: 3, title: 'Photo 3' },
-      { id: 4, title: 'Photo 4' },
+      { id: 1, title: 'Assembly', image: 'assets/assembly.jpeg' },
+      { id: 2, title: 'Side', image: 'assets/side.jpeg' },
+      { id: 3, title: 'Shelf', image: 'assets/shelf.jpeg' },
+      { id: 4, title: 'Side Shelf', image: 'assets/side-shelf.jpeg' },
+      { id: 5, title: 'Foot', image: 'assets/foot.jpeg' },
+      { id: 6, title: 'Back', image: 'assets/back.jpeg' },
+      { id: 7, title: 'Bottom of Side Shelf', image: 'assets/bottom-of-side-shelf.jpeg' },
     ];
 
     const nextPhoto = () => {
@@ -42,18 +45,10 @@ export default {
     <div class="container py-4">
       <h1 class="mb-3">Welcome to Rick's Custom Wood Designs</h1>
       <p class="lead">Handcrafted wooden pieces for your home and special occasions.</p>
-      <router-link to="/items" class="btn btn-primary mb-4"><i class="bi bi-list-check me-1"></i>View Our Collection</router-link>
 
-      <div class="video-section mb-5">
-        <h2 class="h4 mb-3">Watch Our Work</h2>
-        <div class="video-placeholder">
-          <p class="text-muted mb-0">We don't have anything yet—we're working on it right now. Sorry!</p>
-        </div>
-      </div>
-
-      <div class="project-section mb-5">
-        <h2 class="h4 mb-3">High School Final Project</h2>
-        <p class="mb-3">
+      <div class="project-section mb-5" style="padding: 1.25rem;">
+        <h2 class="h5 mb-2">High School Final Project</h2>
+        <p class="mb-2 small">
           this is a project Allison started in high school for a final project in computers in design & production. she made it with recicled cherry wood floorboards. she finished it with her dad (Rick) over the summer. for the final project she had to design and build something that would help someone. so she made a shelf for her xbox, record player, records, and books. 
           
       </p>
@@ -65,7 +60,7 @@ export default {
           </button>
           <div class="carousel-viewer">
             <div class="photo-placeholder">
-              <p class="text-muted">{{ photos[currentPhotoIndex].title }}</p>
+              <img :src="photos[currentPhotoIndex].image" :alt="photos[currentPhotoIndex].title" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
           </div>
           <button class="carousel-button carousel-button-next" @click="nextPhoto" aria-label="Next photo">
@@ -76,6 +71,15 @@ export default {
           <span v-for="(photo, index) in photos" :key="photo.id"
             :class="['indicator', { active: index === currentPhotoIndex }]"
             @click="currentPhotoIndex = index"></span>
+        </div>
+      </div>
+
+      <router-link to="/items" class="btn btn-primary mb-4"><i class="bi bi-list-check me-1"></i>View Our Collection</router-link>
+
+      <div class="video-section mb-5">
+        <h2 class="h4 mb-3">Watch Our Work</h2>
+        <div class="video-placeholder">
+          <p class="text-muted mb-0">We don't have anything yet—we're working on it right now. Sorry!</p>
         </div>
       </div>
 
@@ -104,7 +108,7 @@ export default {
             <strong>Location:</strong> <span>Your City, State</span>
           </div>
         </div>
-        <p class="mt-3 text-muted small">We typically respond to inquiries within 24 hours.</p>
+        <p class="mt-3 text-white small">We typically respond to inquiries within 24 hours.</p>
       </div>
     </div>
   `,
